@@ -1,19 +1,21 @@
 // src/Routes.jsx
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
 import Principal from './pages/Principal';
 
-const AppRoutes = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Login />} />
-                <Route path="/cadastro" element={<Cadastro />} />
-                <Route path="/principal" element={<Principal />} />
-            </Routes>
-        </Router>
-    );
+const App = () => {
+  return (
+    <BrowserRouter basename="/puc-project-tdw">
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+        <Route path="/principal" element={<Principal />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
-export default AppRoutes;
+export default App;
+
