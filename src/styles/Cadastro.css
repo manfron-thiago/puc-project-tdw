@@ -1,0 +1,128 @@
+/* Estilo global para html e body */
+html, body {
+  height: 100%; /* Garante que a altura ocupe toda a janela */
+  margin: 0;    /* Remove a margem padrão */
+}
+
+.cadastro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Garante que o contêiner ocupe toda a altura da janela */
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+input {
+  width: 300px;        /* Largura dos campos de input */
+  padding: 10px;      /* Espaçamento interno dos campos de input */
+  margin: 10px 0;     /* Margem entre os campos de input */
+  border: 1px solid #ccc; /* Borda dos campos de input */
+  border-radius: 5px; /* Bordas arredondadas dos campos de input */
+  font-size: 16px;    /* Tamanho da fonte dentro dos campos de input */
+}
+
+button {
+  width: 150px;        /* Largura do botão */
+  padding: 10px;       /* Espaçamento interno do botão */
+  background-color: #4CAF50; /* Cor de fundo do botão */
+  color: white;        /* Cor do texto do botão */
+  border: none;        /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  font-size: 16px;     /* Tamanho da fonte do botão */
+  cursor: pointer;     /* Cursor de ponteiro ao passar o mouse sobre o botão */
+  margin: 10px 0;      /* Margem entre os botões */
+}
+
+button:hover {
+  background-color: #45a049; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo da mensagem de validação */
+.message {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap; /* Impede que a mensagem quebre a linha */
+}
+
+/* Estilo da mensagem de sucesso */
+.success {
+  color: blue;
+  border-color: blue;
+  background-color: #e0f7e0;
+  display: inline; /* Mantém a mensagem na mesma linha */
+}
+
+/* Estilo da mensagem de erro */
+.error {
+  color: blueviolet;
+  border-color: blueviolet;
+  background-color: #fde2e2;
+  display: inline; /* Mantém a mensagem na mesma linha */
+}
+
+/* Estilo do rodapé */
+.footer {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+}
+
+.back-button {
+  margin-top: 10px; /* Adiciona espaçamento acima do botão "Voltar" */
+}
+
+.message {
+  display: inline; /* Mantém a mensagem na mesma linha */
+  margin-top: 10px; /* Espaçamento acima da mensagem */
+}
+
+.message.error {
+  color: red; /* Cor do texto */
+  background-color: #f8d7da; /* Fundo mais claro */
+  border: 1px solid #f5c6cb; /* Borda vermelha */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-top: 10px; /* Espaçamento acima */
+  width: fit-content; /* Ajusta a largura ao conteúdo */
+  display: inline-block; /* Para que o fundo e a borda se ajustem ao conteúdo */
+}
+
+.message.success {
+  color: green; /* Cor do texto */
+  background-color: #d4edda; /* Fundo mais claro */
+  border: 1px solid #c3e6cb; /* Borda verde */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-top: 10px; /* Espaçamento acima */
+  width: fit-content; /* Ajusta a largura ao conteúdo */
+  display: inline-block; /* Para que o fundo e a borda se ajustem ao conteúdo */
+}
+
+.button-light {
+  background-color: #4A90E2; /* Azul mais claro */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 15px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de ponteiro */
+  font-size: 16px; /* Tamanho da fonte */
+  transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+}
+
+.button-light:hover {
+  background-color: #3b7dc3; /* Cor ao passar o mouse */
+}

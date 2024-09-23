@@ -1,0 +1,93 @@
+body {
+    background-color: #e9ecef; /* Fundo claro para a página */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove margens do body */
+}
+
+.principal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.page-title {
+    font-size: 28px; /* Tamanho do título da página */
+    color: #343a40; /* Cor escura */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+.user-info {
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais forte */
+    padding: 30px; /* Espaçamento interno */
+    margin: 20px 0; /* Margem acima e abaixo */
+    width: 100%; /* Largura total */
+    max-width: 450px; /* Largura máxima */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+.welcome-message {
+    font-size: 22px; /* Tamanho da mensagem de boas-vindas */
+    color: #495057; /* Cor da mensagem */
+    margin-bottom: 15px; /* Espaçamento abaixo da mensagem */
+}
+
+.user-details {
+    background-color: #f8f9fa; /* Fundo levemente cinza para os detalhes */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem abaixo dos detalhes */
+}
+
+.user-info p {
+    margin: 8px 0; /* Margem entre os parágrafos */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #495057; /* Cor do texto */
+}
+
+.logout-button {
+    background-color: #4CAF50; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 12px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+}
+
+.logout-button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+}
+
+.button-light {
+    background-color: #4A90E2; /* Azul mais claro */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de ponteiro */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+}
+
+.button-light:hover {
+    background-color: #3b7dc3; /* Cor ao passar o mouse */
+}
+
