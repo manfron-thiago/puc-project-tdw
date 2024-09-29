@@ -3,6 +3,7 @@ import { auth, db } from '../firebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { setDoc, doc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import InputMask from 'react-input-mask'; // Importando a biblioteca de máscara
 import '../styles/Cadastro.css'; // Importando estilos
 
 const Cadastro = () => {
@@ -65,12 +66,13 @@ const Cadastro = () => {
                     onChange={(e) => setSobrenome(e.target.value)} 
                     required 
                 />
-                <input 
-                    type="date" 
-                    placeholder="Data de Nascimento" 
-                    value={dataNascimento} 
-                    onChange={(e) => setDataNascimento(e.target.value)} 
-                    required 
+                {/* Campo de data com máscara para garantir o formato dd/mm/aaaa */}
+                <InputMask
+                    mask="99/99/9999"
+                    placeholder="Data de Nascimento"
+                    value={dataNascimento}
+                    onChange={(e) => setDataNascimento(e.target.value)}
+                    required
                 />
                 <input 
                     type="email" 
